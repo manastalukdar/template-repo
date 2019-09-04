@@ -55,7 +55,7 @@ It is highly recommended to use [VS Code](https://code.visualstudio.com/).
 
 ### CI, CD
 
-Methodology: [Document](https://github.com/manastalukdar/template-repo/blob/develop/documentation/development/ci-cd.md)
+Methodology: [Document](/documentation/development/ci-cd.md)
 
 ### Upgrading to newer versions of development environments
 
