@@ -16,10 +16,16 @@
       "autoFix": true
     }
   ],
+  "editor.formatOnType": true,
   "eslint.autoFixOnSave": true,
-  "editor.formatOnSave": true,
+  "eslint.enable": true,
+  "prettier.singleQuote": true,
   "eslint.workingDirectories": [{
       "directory": "./",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./app",
       "changeProcessCWD": true
     },
     {
