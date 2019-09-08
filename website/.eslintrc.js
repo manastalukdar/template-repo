@@ -5,11 +5,16 @@ module.exports = {
     node: true,
     es6: true
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-    ecmaVersion: 2018,
-    sourceType: "module"
-  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+    }
+  }
   extends: [
     'plugin:prettier/recommended',
     'eslint:recommended',
