@@ -1,12 +1,14 @@
 module.exports = {
-  root: true,
+  root: false,
   env: {
     browser: true,
     node: true,
     es6: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    ecmaVersion: 2018,
+    sourceType: "module"
   },
   extends: [
     'plugin:prettier/recommended',
@@ -36,6 +38,8 @@ module.exports = {
     FormData: true,
     FileReader: true,
     Blob: true,
-    navigator: true
+    navigator: true,
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
   }
 }
