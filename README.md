@@ -5,17 +5,12 @@
    2. [Continuous Integration](#continuous-integration)
 2. [Installation](#installation)
 3. [Usage](#usage)
-   1. [Viewing](#viewing)
 4. [Development](#development)
-   1. [Environment](#environment)
-   2. [Running Tests](#running-tests)
-   3. [CI, CD](#ci-cd)
-   4. [Upgrading to newer versions of development environments](#upgrading-to-newer-versions-of-development-environments)
-   5. [Contributing](#contributing)
-   6. [Other](#other)
+   1. [Contributing](#contributing)
+   2. [Other](#other)
 5. [Project Management](#project-management)
 6. [Links](#links)
-7. [Note](#note)
+7. [Notes](#notes)
 8. [References](#references)
 9. [License](#license)
 
@@ -50,28 +45,24 @@ some text
 
 ## Installation
 
+[./documentation/Product/install.md](./documentation/Product/install.md)
+
 ## Usage
 
-### Viewing
+[./documentation/Product/usage.md](./documentation/Product/usage.md)
 
 ## Development
 
-### Environment
-
-| Language | Version | Package |
-| -------- | ------- | ------- |
-
-It is highly recommended to use [VS Code](https://code.visualstudio.com/).
-
-### Running Tests
-
-### CI, CD
-
-Methodology: [Document](/documentation/development/ci-cd.md)
-
-### Upgrading to newer versions of development environments
+| Document                | Link                                                                                                     |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| Design and Architecture | [./documentation/Development/design-architecture.md](./documentation/Development/design-architecture.md) |
+| Requirements            | [./documentation/Development/requirements.md](./documentation/Development/requirements.md)               |
+| CI/CD                   | [./documentation/Development/ci-cd.md](./documentation/Development/ci-cd.md)                             |
+| Testing                 | [./documentation/Development/testing.md](./documentation/Development/testing.md)                         |
 
 ### Contributing
+
+[./.github/CONTRIBUTING.md](./.github/CONTRIBUTING.md)
 
 ### Other
 
@@ -83,7 +74,7 @@ Methodology: [Document](/documentation/development/ci-cd.md)
 
 - [Sourcegraph](https://sourcegraph.com/github.com/manastalukdar/template-repo/)
 
-## Note
+## Notes
 
 ## References
 
