@@ -9,4 +9,4 @@ jobs:
 
     - name: Make all
       working-directory: ./
-      run: make all
+      run: ls
