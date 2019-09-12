@@ -32,7 +32,7 @@ some text
 
 | Document     | Link                                                                     |
 | ------------ | ------------------------------------------------------------------------ |
-| Installation | [./documentation/product/install.md](./documentation/product/install.md) |
+| Installation | [./documentation/product/installation.md](./documentation/product/installation.md) |
 | Usage        | [./documentation/product/usage.md](./documentation/product/usage.md)     |
 
 ## Development
