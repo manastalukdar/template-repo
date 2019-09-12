@@ -2,15 +2,15 @@
 
 1. [Overview](#overview)
 2. [Project](#project)
+   1. [Project Management](#project-management)
 3. [Product](#product)
 4. [Development](#development)
    1. [Contributing](#contributing)
    2. [Other](#other)
-5. [Project Management](#project-management)
-6. [Links](#links)
-7. [Notes](#notes)
-8. [References](#references)
-9. [License](#license)
+5. [Links](#links)
+6. [Notes](#notes)
+7. [References](#references)
+8. [License](#license)
 
 A template repository
 
@@ -23,6 +23,10 @@ some text
 | Document | Link                                                                       |
 | -------- | -------------------------------------------------------------------------- |
 | Metadata | [./documentation/project/metadata.md](./documentation/project/metadata.md) |
+
+### Project Management
+
+[GitHub Projects](https://github.com/manastalukdar/template-repo/projects)
 
 ## Product
 
@@ -45,10 +49,6 @@ some text
 [./.github/CONTRIBUTING.md](./.github/CONTRIBUTING.md)
 
 ### Other
-
-## Project Management
-
-[GitHub Projects](https://github.com/manastalukdar/template-repo/projects)
 
 ## Links
 
