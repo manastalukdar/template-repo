@@ -8,4 +8,5 @@ jobs:
     steps:
 
     - name: Make all
+      working-directory: ./
       run: make all
