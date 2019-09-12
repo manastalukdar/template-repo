@@ -1,0 +1,11 @@
+name: Workflow
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Make all
+      run: make all
