@@ -30,10 +30,10 @@ some text
 
 ## Product
 
-| Document     | Link                                                                     |
-| ------------ | ------------------------------------------------------------------------ |
+| Document     | Link                                                                               |
+| ------------ | ---------------------------------------------------------------------------------- |
 | Installation | [./documentation/product/installation.md](./documentation/product/installation.md) |
-| Usage        | [./documentation/product/usage.md](./documentation/product/usage.md)     |
+| Usage        | [./documentation/product/usage.md](./documentation/product/usage.md)               |
 
 ## Development
 
