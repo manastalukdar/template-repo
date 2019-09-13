@@ -16,7 +16,11 @@ A template repository
 
 ## Overview
 
-some text
+Some text
+
+Few badges here: discord/gitter/spectrum server, build status (circleci/travis/github-workflow; ghworkflow preferable), code coverage.
+
+[More project metadata badges [here](./documentation/project/metadata.md). More CI/CD badges [here](./documentation/development/ci-cd.md#current-status).]
 
 ## Project
 
