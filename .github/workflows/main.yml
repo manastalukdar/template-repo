@@ -1,6 +1,6 @@
 # Should have a step to deploy to gh-pages
 
-name: Workflow
+name: build-test
 on: [push]
 jobs:
 

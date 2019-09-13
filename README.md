@@ -20,6 +20,8 @@ Some text
 
 Few badges here: discord/gitter/spectrum server, build status (circleci/travis/github-workflow; ghworkflow preferable), code coverage.
 
+[![Actions Status](https://github.com/manastalukdar/template-repo/workflows/build-test/badge.svg)](https://github.com/manastalukdar/template-repo/actions)
+
 [More project metadata badges [here](./documentation/project/metadata.md). More CI/CD badges [here](./documentation/development/ci-cd.md#current-status).]
 
 ## Project
