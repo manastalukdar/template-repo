@@ -9,9 +9,9 @@
 | Language | Version | Package |
 | -------- | ------- | ------- |
 
-It is highly recommended to use [VS Code](https://code.visualstudio.com/).
+I recommended using [VS Code](https://code.visualstudio.com/).
 
-If you are on Windows, I highly recommend installing [msys2](http://www.msys2.org/). After installation, run the following from the msys2 shell:
+If you are on Windows, I highly recommend installing [msys2](http://www.msys2.org/). After installation, run the following from the `msys2` shell:
 
 ```plaintext
 pacman -Syu
