@@ -1,4 +1,4 @@
-/*Should have a step to deploy to gh-pages*/
+# Should have a step to deploy to gh-pages
 
 name: Workflow
 on: [push]
