@@ -17,6 +17,7 @@
     }
   ],
   "editor.formatOnType": true,
+  "editor.formatOnSave": true,
   "eslint.autoFixOnSave": true,
   "eslint.enable": true,
   "prettier.singleQuote": true,
@@ -40,5 +41,6 @@
   "markdown.extension.toc.levels": "2..6",
   "cSpell.words": [
     "Sourcegraph"
-  ]
+  ],
+  "editor.formatOnPaste": true
 }
