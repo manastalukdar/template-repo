@@ -33,6 +33,8 @@
   "javascript.validate.enable": true,
   "standard.enable": false,
   "markdown.extension.toc.levels": "2..6",
+  "markdown.extension.toc.githubCompatibility": true,
+  "editor.tabSize": 2,
   "cSpell.words": [
     "Sourcegraph"
   ],
