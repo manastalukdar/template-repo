@@ -21,6 +21,7 @@ Some text
 Few badges here: discord/gitter/spectrum server, build status (circleci/travis/github-workflow; ghworkflow preferable), code coverage.
 
 [![Actions Status](https://github.com/manastalukdar/template-repo/workflows/build-test/badge.svg)](https://github.com/manastalukdar/template-repo/actions)
+[![GitHub Super-Linter](https://github.com/manastalukdar/template-repo/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 [More project metadata badges [here](./documentation/project/metadata.md). More CI/CD badges [here](./documentation/development/ci-cd.md#current-status).]
 

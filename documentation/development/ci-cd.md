@@ -10,9 +10,10 @@
 
 ## Current Status
 
-| Platform | Provider | Operations                      | Status                                                                                                                                                     |
-| -------- | -------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Linux    | GitHub   | Build, Test, Deploy to gh-pages | [![Actions Status](https://github.com/manastalukdar/template-repo/workflows/build-test/badge.svg)](https://github.com/manastalukdar/template-repo/actions) |
+| Platform | Provider | Operations                      | Status                                                                                                                                                               |
+| -------- | -------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Linux    | GitHub   | Build, Test, Deploy to gh-pages | [![Actions Status](https://github.com/manastalukdar/template-repo/workflows/build-test/badge.svg)](https://github.com/manastalukdar/template-repo/actions)           |
+| Linux    | GitHub   | Linter                          | [![GitHub Super-Linter](https://github.com/manastalukdar/template-repo/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) |
 
 ## Methodology
 
