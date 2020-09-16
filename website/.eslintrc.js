@@ -14,14 +14,17 @@ module.exports = {
         "modules": true,
         "experimentalObjectRestSpread": true
     }
-  }
+  },
   extends: [
     'plugin:prettier/recommended',
     'eslint:recommended',
     'google',
     'standard'
   ],
-  plugins: ['prettier'],
+  plugins: [
+    'prettier',
+    'markdown'
+  ],
   // add your custom rules here
   rules: {
     'no-underscore-dangle': 0,

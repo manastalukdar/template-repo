@@ -38,5 +38,8 @@
   "cSpell.words": [
     "Sourcegraph"
   ],
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "files.watcherExclude": {
+    "**/target": true
+  }
 }

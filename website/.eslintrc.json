@@ -28,6 +28,7 @@
   "plugins": [
     "prettier",
     "react",
+    "markdown",
     "@typescript-eslint"
   ],
   // add your custom rules here
