@@ -48,8 +48,9 @@ Few badges here: discord/gitter/spectrum server, build status (circleci/travis/g
 | ----------------------- | -------------------------------------------------------------------------------------------------------- |
 | Design and Architecture | [./documentation/development/design-architecture.md](./documentation/development/design-architecture.md) |
 | Requirements            | [./documentation/development/requirements.md](./documentation/development/requirements.md)               |
-| CI/CD                   | [./documentation/development/ci-cd.md](./documentation/development/ci-cd.md)                             |
+| Development             | [./documentation/development/development.md](./documentation/development/development.md)                 |
 | Testing                 | [./documentation/development/testing.md](./documentation/development/testing.md)                         |
+| CI/CD                   | [./documentation/development/ci-cd.md](./documentation/development/ci-cd.md)                             |
 
 ### Contributing
 
