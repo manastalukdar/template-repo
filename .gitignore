@@ -61,3 +61,13 @@ typings/
 .next
 
 .metals
+
+out
+dist
+
+
+.vscode-test/
+*.vsix
+
+.vscode/.ropeproject
+__pycache__
