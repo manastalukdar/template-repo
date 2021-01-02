@@ -9,10 +9,10 @@
   ],
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.enable": true,
   "prettier.singleQuote": true,
   "eslint.workingDirectories": [
     {
@@ -38,8 +38,34 @@
   "cSpell.words": [
     "Sourcegraph"
   ],
-  "editor.formatOnPaste": true,
   "files.watcherExclude": {
     "**/target": true
-  }
+  },
+  "python.testing.unittestEnabled": false,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "*test.py"
+  ],
+  "python.testing.promptToConfigure": false,
+  "python.testing.pytestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.linting.pylintEnabled": true,
+  "java.test.config": [
+    {
+      "name": "myConfig",
+      "workingDirectory": "${workspaceFolder}"
+    }
+  ],
+  "java.test.defaultConfig": "myConfig",
+  "markdownShortcuts.bullets.marker": "-",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.checkstyle.configuration": "",
+  "java.debug.settings.console": "internalConsole",
+  "markdown.extension.list.indentationSize": "inherit",
+  "python.linting.enabled": true,
+  "c3.rootPackage": ""
 }
