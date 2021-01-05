@@ -3,12 +3,14 @@
 name: build-test
 on: [push]
 jobs:
-
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
     steps:
-
-    - name: Make all
-      working-directory: ./
-      run: ls
+      - name: Make all
+        working-directory: ./
+        run: ls
