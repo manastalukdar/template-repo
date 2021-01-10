@@ -2,11 +2,11 @@
 
 1. [Overview](#overview)
 2. [Project](#project)
-   1. [Project Management](#project-management)
+    1. [Project Management](#project-management)
 3. [Product](#product)
 4. [Development](#development)
-   1. [Contributing](#contributing)
-   2. [Other](#other)
+    1. [Contributing](#contributing)
+    2. [Other](#other)
 5. [Links](#links)
 6. [Notes](#notes)
 7. [References](#references)
@@ -21,7 +21,7 @@ Some text
 Few badges here: discord/gitter/spectrum server, build status (circleci/travis/github-workflow; ghworkflow preferable), code coverage.
 
 [![Actions Status](https://github.com/manastalukdar/template-repo/workflows/build-test/badge.svg)](https://github.com/manastalukdar/template-repo/actions)
-[![GitHub Super-Linter](https://github.com/manastalukdar/template-repo/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![GitHub Super-Linter](https://github.com/manastalukdar/template-repo/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/manastalukdar/template-repo/actions)
 
 [More project metadata badges [here](./documentation/project/metadata.md). More CI/CD badges [here](./documentation/development/ci-cd.md#current-status).]
 
