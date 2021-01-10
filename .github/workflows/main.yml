@@ -9,8 +9,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
+      - uses: actions/checkout@v2
+      - name: Checkout submodules
+        run: make git
       - name: Make all
+        run: make all
+      - name: ls
         working-directory: ./
         run: ls

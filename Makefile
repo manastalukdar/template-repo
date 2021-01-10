@@ -14,4 +14,19 @@ cli:
 frontend:
 	@echo WIP
 
-all: backend cli frontend
+#*****************
+# Project tasks
+#*****************
+
+get-git-submodules:
+	git submodule update --init --recursive --remote --merge
+
+#*****************
+# All tasks
+#*****************
+
+git: get-git-submodules
+
+code: backend cli frontend
+
+all: git code
