@@ -15,17 +15,33 @@ frontend:
 	@echo WIP
 
 #*****************
-# Project tasks
+# Git tasks
 #*****************
 
-get-git-submodules:
-	git submodule update --init --recursive --remote --merge
+git-version:
+	git --version
+
+git-upgrade-ubuntu:
+	sudo apt-get install software-properties-common
+	sudo add-apt-repository ppa:git-core/ppa -y
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install git -y
+	git --version
+
+git-submodules-setup:
+	git submodule sync --recursive
+	git submodule foreach --recursive git fetch
+	git submodule foreach git pull
+
+git-get-submodules:
+	git submodule update --init --recursive --remote --rebase
 
 #*****************
 # All tasks
 #*****************
 
-git: get-git-submodules
+git: git-version git-get-submodules
 
 code: backend cli frontend
 
