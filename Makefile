@@ -5,6 +5,10 @@ ifneq ($(OS),Windows_NT)
 	workspaceFolder = ./
 endif
 
+#*****************
+# Code tasks
+#*****************
+
 backend:
 	@echo WIP
 
