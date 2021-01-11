@@ -29,8 +29,8 @@ Implement CI-CD pipelines with the following functionality. Consider using GitHu
 
 Versioning of packages published by different branches:
 
-- `main` deploys stable production code. `latest` tag should be used for the corresponding npm package.
-- `develop` deploys under-development code. `next` tag should be used for the corresponding npm package.
+- `main` deploys stable production code. `latest` tag should be used for the corresponding package.
+- `develop` deploys under-development code. `next` tag should be used for the corresponding package.
 
 ### Builds
 
@@ -52,7 +52,7 @@ Deployment pipeline should:
 
 1. Tag the branch with the correct semantic version number. Investigate using some open-source automated semver tooling.
 2. Create GitHub release. The Release text can be initially (and automatically) populated by issues (title and link) referenced by the direct push commit or the PR that just got merged in.
-3. Publish package to npm.
+3. Publish package to relevant package registry.
     - On `develop` package should be tagged as `next`.
     - On `main` package should be tagged as `latest`.
     - **Question**: What about release candidates? `rc` tags? Which branch does this go from? Typically this goes from an intermediate release branch. How would this tie into the automation?
