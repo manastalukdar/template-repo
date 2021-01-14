@@ -68,4 +68,4 @@ Few badges here: discord/gitter/spectrum server, build status (circleci/travis/g
 
 ## License
 
-[MIT](https://github.com/manastalukdar/template-repo/blob/master/LICENSE)
+[MIT](https://github.com/manastalukdar/template-repo/blob/main/LICENSE)
