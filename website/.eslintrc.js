@@ -3,28 +3,26 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es6: true
+    es6: true,
   },
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-        "jsx": true,
-        "modules": true,
-        "experimentalObjectRestSpread": true
-    }
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+      experimentalObjectRestSpread: true,
+    },
   },
   extends: [
+    'prettier',
+    'standard',
     'plugin:prettier/recommended',
     'eslint:recommended',
     'google',
-    'standard'
   ],
-  plugins: [
-    'prettier',
-    'markdown'
-  ],
+  plugins: ['prettier', 'markdown'],
   // add your custom rules here
   rules: {
     'no-underscore-dangle': 0,
@@ -33,11 +31,11 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        endOfLine: 'auto'
-      }
+        endOfLine: 'auto',
+      },
     ],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
   globals: {
     window: true,
@@ -47,7 +45,7 @@ module.exports = {
     FileReader: true,
     Blob: true,
     navigator: true,
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
-  }
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
 }

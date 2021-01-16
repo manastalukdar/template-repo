@@ -50,3 +50,11 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILTER_REGEX_EXCLUDE: .*(website/.*.md\.github|\.vscode|CODE_OF_CONDUCT.md|README.md|documentation).*
+          JAVASCRIPT_DEFAULT_STYLE: prettier
+          LINTER_RULES_PATH: "."
+          EDITORCONFIG_FILE_NAME: .editorconfig
+          MARKDOWN_CONFIG_FILE: .markdownlint.json
+          VALIDATE_PYTHON_BLACK: false
+          VALIDATE_PYTHON_FLAKE8: false
+          VALIDATE_PYTHON_ISORT: false
