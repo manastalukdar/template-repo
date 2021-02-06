@@ -7,9 +7,9 @@
     "markdown",
     "json"
   ],
-  "editor.formatOnType": true,
+  "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -34,6 +34,7 @@
   "standard.enable": false,
   "markdown.extension.toc.levels": "2..6",
   "markdown.extension.toc.githubCompatibility": true,
+  "markdownlint.run": "onSave",
   "editor.tabSize": 2,
   "cSpell.words": [
     "Sourcegraph"
