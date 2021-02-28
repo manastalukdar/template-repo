@@ -62,12 +62,15 @@ osflag:
 #*****************
 
 backend:
+	@echo -e "\n*********Backend*********\n"
 	@echo WIP
 
 cli:
+	@echo -e "\n*********CLI*********\n"
 	@echo WIP
 
 frontend:
+	@echo -e "\n*********Frontend*********\n"
 	@echo WIP
 
 #*****************
