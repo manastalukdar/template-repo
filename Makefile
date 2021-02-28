@@ -37,6 +37,9 @@ endif
 # Misc
 #*****************
 
+# https://makefiletutorial.com
+SHELL=/bin/bash
+
 workspaceFolder :=
 gradlewScript :=
 
