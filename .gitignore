@@ -61,6 +61,7 @@ typings/
 .next
 
 .metals
+null
 
 out
 dist
