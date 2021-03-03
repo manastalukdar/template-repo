@@ -20,7 +20,7 @@ Some text
 
 Few badges here: discord/gitter/spectrum server, build status (circleci/travis/github-workflow; ghworkflow preferable), code coverage.
 
-[![build-test-deploy](https://github.com/manastalukdar/template-repo/workflows/build-test-deploy/badge.svg)](https://github.com/manastalukdar/template-repo/actions)
+[![build-test-deploy](https://github.com/manastalukdar/template-repo/actions/workflows/main.yml/badge.svg)](https://github.com/manastalukdar/template-repo/actions/workflows/main.yml)
 [![Lint Code Base](https://github.com/manastalukdar/template-repo/actions/workflows/linter.yml/badge.svg)](https://github.com/manastalukdar/template-repo/actions/workflows/linter.yml)
 
 [More project metadata badges [here](./documentation/project/metadata.md). More CI/CD badges [here](./documentation/development/ci-cd.md#current-status).]
