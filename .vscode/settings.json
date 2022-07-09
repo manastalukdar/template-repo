@@ -10,6 +10,14 @@
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.quickSuggestionsDelay": 100,
+  "editor.snippetSuggestions": "none",
+  "editor.wordBasedSuggestions": false, // disable tab expansion because it conflict with github-copilot
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
