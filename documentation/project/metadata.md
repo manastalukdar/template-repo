@@ -13,8 +13,6 @@
 | GitHub                                                                | License                                   | ![GitHub](https://img.shields.io/github/license/manastalukdar/template-repo)                                                                                                        |
 | [FOSSA](https://fossa.com/)                                           | Open Source Software Management           |                                                                                                                                                                                     |
 | [CII Best Practices](https://bestpractices.coreinfrastructure.org/en) | Open source software best practices check |                                                                                                                                                                                     |
-| david-dm                                                              | Check node.js dependency status           | [![Dependency Status](https://img.shields.io/david/manastalukdar/template-repo?path=website)](https://david-dm.org/manastalukdar/template-repo?path=website)                        |
-| david-dm                                                              | Check node.js dev dependency status       | [![devDependencies Status](https://img.shields.io/david/manastalukdar/template-repo?path=website&type=dev)](https://david-dm.org/manastalukdar/template-repo?path=website&type=dev) |
 
 <!--
 | N/A | david-dm | Check node.js dependency status | [![Dependency Status](https://david-dm.org/manastalukdar/template-repo.svg?path=website)](https://david-dm.org/manastalukdar/template-repo?path=website) |
