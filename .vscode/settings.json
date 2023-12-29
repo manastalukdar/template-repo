@@ -17,9 +17,9 @@
   },
   "editor.quickSuggestionsDelay": 100,
   "editor.snippetSuggestions": "none",
-  "editor.wordBasedSuggestions": false, // disable tab expansion because it conflict with github-copilot
+  "editor.wordBasedSuggestions": "off", // disable tab expansion because it conflict with github-copilot
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "prettier.singleQuote": true,
   "eslint.workingDirectories": [
@@ -78,7 +78,7 @@
   "python.linting.enabled": true,
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "c3.rootPackage": ""
