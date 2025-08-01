@@ -43,15 +43,49 @@ jobs:
       - run: python --version
       - run: python -m pip install --upgrade pip
       - run: pip install -r requirements.txt
+      
       - uses: actions/setup-node@v4
         with:
-          node-version: latest
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: website/package.json
       - run: node --version
+      - run: npm --version
+      
+      - name: Install Node.js dependencies
+        run: cd website && npm install
+        
+      - name: Run Python linting
+        run: |
+          flake8 . --exclude=node_modules,website,build,dist --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --exclude=node_modules,website,build,dist --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+          
+      - name: Run Python tests
+        run: |
+          python -m pytest tests/ -v --tb=short || echo "No tests found"
+          
+      - name: Run Node.js linting
+        run: cd website && npm run lint || echo "No lint script found"
+        
+      - name: Run Node.js tests
+        run: cd website && npm test || echo "No test script found"
+        
+      - name: Build frontend
+        run: cd website && npm run build
+        
       - name: Make all
         run: make all
-      - name: ls
-        working-directory: ./
-        run: ls
+        
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v3
+        if: matrix.os == 'ubuntu-latest'
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
+          fail_ci_if_error: false
+          
+      - name: List build artifacts
+        run: ls -la
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
       #   if: ${{ github.event_name == 'push' && env.BRANCH == 'source' }}

@@ -72,3 +72,137 @@ dist
 
 .vscode/.ropeproject
 __pycache__
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDEs and editors
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.atom/
+
+# Python additional patterns
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.pytest_cache/
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Java
+*.class
+*.war
+*.ear
+*.jar
+target/
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.la
+*.lo
+*.slo
+*.Plo
+*.gch
+*.pch
+
+# Rust
+target/
+Cargo.lock
+
+# Go
+*.test
+coverage.txt
+coverage.html
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Documentation build
+docs/_build/
+site/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Local configuration files
+config.local.*
+*.local.json
+*.local.yml
+*.local.yaml
+
+# Secret files
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Additional environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache directories
+.cache
+.parcel-cache

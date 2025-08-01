@@ -5,7 +5,44 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/website/" # Location of package manifests
+  # Enable version updates for npm (JavaScript/Node.js)
+  - package-ecosystem: "npm"
+    directory: "/website/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "manastalukdar"
+    assignees:
+      - "manastalukdar"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Enable version updates for pip (Python)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "manastalukdar"
+    assignees:
+      - "manastalukdar"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "manastalukdar"
+    assignees:
+      - "manastalukdar"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
