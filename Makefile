@@ -83,12 +83,34 @@ frontend:
 	@if [ -f "website/package.json" ]; then \
 		echo "Installing Node.js dependencies..."; \
 		cd website && npm install; \
+		echo "Running frontend linting..."; \
+		cd website && npm run lint || echo "Linting failed, continuing..."; \
+		echo "Running frontend tests..."; \
+		cd website && npm test -- --passWithNoTests || echo "Tests failed, continuing..."; \
 		echo "Building frontend..."; \
 		cd website && npm run build; \
 	else \
 		echo "No package.json found in website/, skipping..."; \
 	fi
 	@echo "Frontend setup complete"
+
+frontend-dev:
+	@echo -e "\n*********Frontend Development*********\n"
+	@if [ -f "website/package.json" ]; then \
+		echo "Starting frontend development server..."; \
+		cd website && npm run dev; \
+	else \
+		echo "No package.json found in website/, skipping..."; \
+	fi
+
+frontend-export:
+	@echo -e "\n*********Frontend Static Export*********\n"
+	@if [ -f "website/package.json" ]; then \
+		echo "Building and exporting static site..."; \
+		cd website && npm run export; \
+	else \
+		echo "No package.json found in website/, skipping..."; \
+	fi
 
 #*****************
 # Git tasks

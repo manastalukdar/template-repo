@@ -65,13 +65,17 @@ jobs:
           python -m pytest tests/ -v --tb=short || echo "No tests found"
           
       - name: Run Node.js linting
-        run: cd website && npm run lint || echo "No lint script found"
+        run: cd website && npm run lint
         
       - name: Run Node.js tests
-        run: cd website && npm test || echo "No test script found"
+        run: cd website && npm test -- --passWithNoTests
         
       - name: Build frontend
         run: cd website && npm run build
+        
+      - name: Export static site
+        run: cd website && npm run export
+        if: matrix.os == 'ubuntu-latest'
         
       - name: Make all
         run: make all
