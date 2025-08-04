@@ -30,7 +30,7 @@
     "@next/eslint-config-next": "^14.0.4",
     "@storybook/addon-essentials": "^7.6.3",
     "@storybook/addon-interactions": "^7.6.3",
-    "@storybook/addon-links": "^7.6.3",
+    "@storybook/addon-links": "^8.1.11",
     "@storybook/blocks": "^7.6.3",
     "@storybook/nextjs": "^7.6.3",
     "@storybook/react": "^7.6.3",
