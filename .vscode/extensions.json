@@ -1,6 +1,52 @@
-// Step1: Get extensions json data from sync gist.
-// Step2: https://jsonformatter.org/json-parser to get metadata.publisherId
+// Recommended VS Code extensions for this template repository
 
 {
-  "recommendations": []
+  "recommendations": [
+    // Python Development
+    "ms-python.python",
+    "ms-python.flake8",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "ms-python.pylint",
+    
+    // JavaScript/TypeScript/Web Development
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    
+    // General Development
+    "ms-vscode.makefile-tools",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+    
+    // Git & GitHub
+    "github.vscode-pull-request-github",
+    "github.copilot",
+    "github.copilot-chat",
+    "eamodio.gitlens",
+    
+    // Documentation & Markdown
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    
+    // Code Quality & Testing
+    "ms-vscode.test-adapter-converter",
+    "hbenl.vscode-test-explorer",
+    "ms-python.pytest",
+    
+    // Productivity
+    "streetsidesoftware.code-spell-checker",
+    "ms-vscode.todo-highlight",
+    "gruntfuggly.todo-tree",
+    "alefragnani.bookmarks",
+    
+    // Theme & UI
+    "pkief.material-icon-theme",
+    "github.github-vscode-theme"
+  ],
+  "unwantedRecommendations": []
 }

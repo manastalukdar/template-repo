@@ -1,4 +1,58 @@
+# EditorConfig helps maintain consistent coding styles for multiple developers
+# working on the same project across various editors and IDEs.
+# https://editorconfig.org
+
+root = true
+
 [*]
 end_of_line = lf
 charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
 indent_style = space
+indent_size = 2
+
+# JavaScript, TypeScript, JSX, TSX
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# CSS, SCSS, Less
+[*.{css,scss,less}]
+indent_size = 2
+
+# HTML
+[*.html]
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+indent_size = 2
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# Package.json and similar
+[package.json]
+indent_size = 2
+
+# Config files
+[*.{config,conf}.{js,ts}]
+indent_size = 2
+
+# Makefile
+[Makefile]
+indent_style = tab
+
+# Python files
+[*.py]
+indent_size = 4
+
+# Docker files
+[Dockerfile*]
+indent_size = 2

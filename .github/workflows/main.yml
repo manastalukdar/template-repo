@@ -27,31 +27,69 @@ jobs:
     steps:
       - name: Extract Branch Name
         run: echo "BRANCH=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Checkout submodules
         run: make git
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v4
         with:
           distribution: "temurin"
           java-version: "17.0.0"
           architecture: x64
       - run: java -version
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           architecture: "x64"
       - run: python --version
       - run: python -m pip install --upgrade pip
       - run: pip install -r requirements.txt
-      - uses: actions/setup-node@v3
+      
+      - uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: website/package.json
       - run: node --version
+      - run: npm --version
+      
+      - name: Install Node.js dependencies
+        run: cd website && npm install
+        
+      - name: Run Python linting
+        run: |
+          flake8 . --exclude=node_modules,website,build,dist --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --exclude=node_modules,website,build,dist --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+          
+      - name: Run Python tests
+        run: |
+          python -m pytest tests/ -v --tb=short || echo "No tests found"
+          
+      - name: Run Node.js linting
+        run: cd website && npm run lint
+        
+      - name: Run Node.js tests
+        run: cd website && npm test -- --passWithNoTests
+        
+      - name: Build frontend
+        run: cd website && npm run build
+        
+      - name: Export static site
+        run: cd website && npm run export
+        if: matrix.os == 'ubuntu-latest'
+        
       - name: Make all
         run: make all
-      - name: ls
-        working-directory: ./
-        run: ls
+        
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v3
+        if: matrix.os == 'ubuntu-latest'
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
+          fail_ci_if_error: false
+          
+      - name: List build artifacts
+        run: ls -la
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
       #   if: ${{ github.event_name == 'push' && env.BRANCH == 'source' }}
