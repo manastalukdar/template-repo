@@ -21,7 +21,7 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "next": "^14.0.4",
+    "next": "^15.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "lucide-react": "^0.294.0"
