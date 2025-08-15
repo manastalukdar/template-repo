@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/python:3.11
+FROM mcr.microsoft.com/devcontainers/python:3.13
 
 # Install Node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
