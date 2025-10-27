@@ -22,7 +22,7 @@ services:
     command: sleep infinity
 
   db:
-    image: postgres:17-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_DB: template_dev
       POSTGRES_USER: dev_user
