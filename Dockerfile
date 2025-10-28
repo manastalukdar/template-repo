@@ -1,6 +1,6 @@
 # Multi-stage Dockerfile for template repository
 # Build stage
-FROM node:22-alpine AS frontend-builder
+FROM node:24-alpine AS frontend-builder
 
 WORKDIR /app/website
 COPY website/package*.json ./
